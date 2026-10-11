@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Task Tracker</title>
+
+    <!-- Connect our CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Load JavaScript after the HTML is parsed -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="task-container">
+        <h1>My Task Tracker</h1>
+        <p class="subtitle">Small steps, big progress.</p>
+
+        <form id="task-form">
+            <input
+                type="text"
+                id="task-input"
+                placeholder="What do you need to do?"
+                aria-label = "New task"
+                maxlength="150"
+                required
+            >
+
+            <button type="submit">Add Task</button>
+        </form>
+
+        <p id="task-count">0 tasks remaining</p>
+
+        <ul id="task-list"></ul>
+
+        <button id="clear-completed" class="secondary-button">
+            Clear Completed Tasks
+        </button>
+    </main>
+
+</body>
+</html>
